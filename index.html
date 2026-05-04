@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Cruz | Dev Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #12182a;
+      --primary: #4f46e5;
+      --accent: #22d3ee;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+
+    body { background: var(--bg); color: var(--text); }
+
+    header {
+      padding: 4rem 1rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #1f2937, #020617);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header span {
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 1rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover { opacity: 0.85; }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .skills {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .projects {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.2rem;
+      border-radius: 12px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .skill { text-align: center; font-size: 0.9rem; }
+
+    .project-title { font-weight: 600; margin-bottom: 0.5rem; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      header h1 { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gabriel <span>Cruz</span></h1>
+  <p>Desenvolvedor em formação focado em criar sites modernos, rápidos e que geram resultados reais.</p>
+  <a href="#contato" class="btn">Fale comigo</a>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>Sobre</h2>
+    <p>Sou Gabriel, estudante de Ciência da Computação e desenvolvedor em formação.
+Tenho foco em criar soluções práticas, principalmente para pequenos negócios que precisam crescer no digital.
+Acredito que tecnologia não é só código é ferramenta para gerar resultados reais.</p>
+  </section>
+
+
+  <section>
+    <h2>Habilidades</h2>
+    <div class="grid skills">
+      <div class="card skill">HTML</div>
+      <div class="card skill">CSS</div>
+      <div class="card skill">JavaScript</div>
+      <div class="card skill">Git</div>
+      <div class="card skill">Responsividade</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projetos</h2>
+    <div class="grid projects">
+      <div class="card">
+        <div class="project-title">Site de Notícias</div>
+        <p>Site de notícias com layout moderno e funcionalidades interativas.
+            <a href="https://veritasnews-novo.pages.dev/" target="_blank" style="color: var(--accent); text-decoration: underline;">Veja o projeto</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="project-title">Portfólio Pessoal</div>
+        <p>Este site foi desenvolvido com HTML e CSS responsivo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:gabrielserafimcruz@gmail.com">Enviar E-mail</a>
+</p>
+    <p>Telefone: <a href="tel:+5521999074793">Ligar para mim</a>
+</p>
+    <p>GitHub: <a href="https://github.com/elcruzzz10" target="_blank" style="color: var(--accent); text-decoration: underline;">Veja meu GitHub</a>
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 Gabriel Cruz — Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
